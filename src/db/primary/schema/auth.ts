@@ -4,7 +4,7 @@ import { organizations } from "./organization";
 
 export const user = sqliteTable("user", {
   id: text("id").primaryKey(),
-  handle: text("name").notNull(),
+  name: text("name").notNull(),
   email: text("email"),
   picture: text("picture").notNull(),
   organization_id: text("organization_id"),
