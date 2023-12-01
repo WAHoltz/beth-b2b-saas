@@ -3,4 +3,4 @@ import { authGroup } from "./(auth)/*";
 import { index } from "./index";
 import { newUser } from "./new-user";
 
-export const pages = new Elysia().use(index).use(authGroup).use(newUser);
+export const pages: any = new Elysia().use(index).use(authGroup).use(newUser);
